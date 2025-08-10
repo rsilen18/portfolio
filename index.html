@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Roman - Software Engineer Portfolio</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Roman Silen</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <!-- Icon will be injected by JS -->
+      </button>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm <span class="highlight">Roman</span></h1>
+      <p>Software Engineer | Machine Learning</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+    <img src="profile-pic.jpeg" alt="Roman" class="profile-img"/>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a software engineer passionate about turning cutting-edge AI research into real-world applications. My experience spans vision-language models, large language model-based classification, and scalable deployment pipelines; often bridging the gap between prototype and production. I enjoy tackling challenging problems at the intersection of NLP, computer vision, and deep learning infrastructure, and I thrive in collaborative, fast-paced environments where innovation and impact go hand in hand.
+    </p>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project-card">
+        <h3>Robustness vs. Fairness</h3>
+        <p>An exploration of trade-offs between distributionally robust optimization (DRO) and fairness in machine learning.</p>
+        <a href="https://github.com/mlo-12th-st/dro-vs-fairness" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Wave Equation Solver</h3>
+        <p>Numerical solvers for the wave equation using finite difference techniques in MATLAB and C++.</p>
+        <a href="https://github.com/rsilen18/wave-equation-solver" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>AlphaFold2</h3>
+        <p>Scripts to implement and train the AlphaFold2 model for a course project in Machine Learning in Bioinformatics.</p>
+        <a href="https://github.com/rsilen18/mlib-capstone" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skill-list">
+      <div class="skill">
+        <span>Python</span>
+        <div class="skill-bar"><div class="skill-level" style="width: 95%"></div></div>
+      </div>
+      <div class="skill">
+        <span>MATLAB</span>
+        <div class="skill-bar"><div class="skill-level" style="width: 95%"></div></div>
+      </div>
+      <div class="skill">
+        <span>C++</span>
+        <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+      </div>
+      <div class="skill">
+        <span>Git</span>
+        <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+      </div>
+      <div class="skill">
+        <span>SQL</span>
+        <div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <form id="contactForm">
+      <!-- <input type="text" id="name" placeholder="Your Name" required/>
+      <input type="email" id="email" placeholder="Your Email" required/>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+      <p class="form-message" id="formMessage"></p> -->
+      <p>If you would like to contact me, please reach out via LinkedIn.</p>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Roman Silen. All rights reserved.</p>
+    <div class="socials">
+      <a href="https://github.com/rsilen18" aria-label="GitHub"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"></a>
+      <a href="https://www.linkedin.com/in/roman-silen/" aria-label="LinkedIn"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn"></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
